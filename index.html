@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventour</title>
+    <link rel="icon" href="./assets/files/logo.png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Video & Header -->
+
+    <div class="banner">
+        <video src="./assets/files/bgvid.mp4" type="video/mp4" autoplay muted loop></video>
+
+        <!-- Header -->
+
+        <div class="content" id="home">
+            <nav>
+                <img src="./assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
+                <ul class="navbar">
+                    <li>
+                        <a href="index.html">Главная</a>
+                        <a href="./index.html#package">Пакеты</a>
+                        <a href="./index.html#locations">Локации</a>
+                        <a href="./info.html">О нас</a>
+                        <a href="./contact.html">Контакты</a>
+                    </li>
+                </ul>
+                </form>
+            </nav>
+
+            <div class="title">
+                <h1>ora d'oro</h1>
+                <p>Запланируйте своё путешествие с нами и путешествуйте по всему миру с самыми доступными пакетами!</p>
+
+                <div class="wrapper" style="margin-top: 1rem;">
+                    <form action="#">
+                        <div class="h5 font-weight-bold text-center mb-3">Поиск дистанции</div>
+                        <div class="destination">
+                            <label for="city">Выбирите дистанция</label>
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" class="form-control" placeholder="Введите Страну/Город">
+                        </div>
+                        <div class="destination">
+                            <label for="city">Выберите дату</label>
+                        </div>
+                        <div class="form-group">
+                            <input autocomplete="off" type="date" class="form-control" placeholder="Select your date">
+                        </div>
+                        <div class="form-group">
+                            <div class="lable_total flex">
+                                  <label class="destination" for="price">Макс Цена: <span id="result">2500</span> 
+                                  </label>
+                            </div>
+                            <input id="mySlider" type="range" min="0" max="10000" value="2500">
+                            <script>
+                                mySlider.oninput = showSliderValue;
+                                function showSliderValue() {
+                                    result.innerText = this.value;
+                                }
+                            </script>
+                        </div>
+                    </form>
+                </div>
+
+                <a href="./booking.html" class="button">
+                    <span class="material-symbols-outlined">
+                        Поиск
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <section class="container">
+        <div class="text">
+            <h2>У нас есть лучшие сервисы для тебя</h2>
+        </div>
+        <div class="rowitems">
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./assets/files/1a.jpg" alt="Летные услуги">
+                </div>
+                    <h4>Авиаслужбы</h4>
+                    <p>Прибытие и отправление</p>
+                  </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./assets/files/2a.jpg" alt="Общественное питание">
+                </div>
+                <h4>Питание</h4>
+                <p>Обслуживание питанием</p>
+
+            </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./assets/files/3a.jpg" alt="Туристические услуги">
+                </div>
+                <h4>Туристические услуги</h4>
+                <p>Подбор и доставка</p>
+                
+            </div>
+
+            <div class="container-box">
+                <div class="container-image">
+                    <img src="./assets/files/4a.jpg" alt="Гостиничные услуги">
+                </div>
+                <h4>Гостиничные услуги</h4>
+                <p>Регистрация заезда/выезда</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+
+    <section class="package" id="package">
+        <div class="package-title">
+            <h2>Пакеты</h2>
+        </div>
+
+        <div class="package-content">
+            <div class="text-block">
+                <h3>Наиболее продаваемые</h3>
+            </div>
+
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/p1.jpg" alt="">
+                        <h3>Начиная с 1000 манат</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/p2.jpg" alt="">
+                        <h3>Начиная с 1000 манат</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/p3.jpg" alt="">
+                        <h3>Начиная с 1000 манат</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/p4.jpg" alt="">
+                        <h3>Начиная с 1000 манат</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/pac1.jpeg" alt="">
+                        <h3>Начиная с 1000 манат</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/pac1.jpg" alt="">
+                        <h3>Начиная с 1000 манат</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/pac3.jpg" alt="">
+                        <h3>Начиная с 1000 манат</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/pac7.jpg" alt="">
+                        <h3>Начиная с 1000 манат</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./locations.html">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/l3.jpg" alt="">
+                        <h3>Начиная с 1000 манат-</h3>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        
+        <!-- Экзотика -->
+    </section> <br><br>
+            <div class="package-content">
+                <div class="text-block">
+                    <h3>Экзотика</h3>
+                </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pack5.1.jpg" alt="">
+                    <h3>Египт</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pack5.2.jpg" alt="">
+                    <h3>Таиланд</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac2.3.jpg" alt="">
+                    <h3>Таиланд</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac2.4.webp" alt="">
+                    <h3>Бали</h3>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <!-- Популярные предложения --> 
+    <section class="package2" id="package">
+
+        <div class="package2-content">
+            <div class="text-block">
+                <h3>Наиболее популярные предложения</h3>
+                <p>По наиболее выгодной цене!</p>
+            </div>
+
+            <a href="./assets/package.html#6000">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/pac2.1.jpg" alt="">
+                        <h3> Индия </h3>
+                    </div>
+                </div>
+            </a>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pack2.2.jpg" alt="">
+                    <h3>Goa</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac2.3.jpg" alt="">
+                    <h3>Таиланд</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/files/pac2.4.webp" alt="">
+                    <h3>Бали</h3>
+                </div>
+            </div>
+
+            <a href="./package.html#6000">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/files/pac2.5.jpg" alt="">
+                        <h3>Альпы</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Explore Button -->
+
+        <div style="text-align:center">
+            <button type="button" class="btn btn-primary"> <a href="locations.html">Explore More</a></button>
+        </div>
+    </section><br><hr><br>
+
+    <!-- Locations -->
+
+    <section class="locations" id="locations">
+        <div class="package-title">
+            <h2>Локации</h2>
+        </div>
+
+        <div class="location-content">
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/l1.jpg" alt="">
+                    <h5>Ирландия</h5>
+                    <p>Дублин</p>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/l2.jpg" alt="">
+                    <h5>Турция</h5>
+                    <p>Стамбул</p>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/l3.jpg" alt="">
+                    <h5>Италия</h5>
+                    <p>Рим</p>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/l4.jpg" alt="">
+                    <h5>Индонезия</h5>
+                    <p>Бали</p>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/l5.jpg" alt="">
+                    <h5>ОАЭ</h5>
+                    <p>Дубай</p>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/l6.jpg" alt="">
+                    <h5>Швецария</h5>
+                    <p>Берн</p>
+                </div>
+            </a>
+
+            <a href="./locations.html">
+                <div class="col-content">
+                    <img src="./assets/files/l7.jpg" alt="">
+                    <h5>Мальдивы</h5>
+                    <p>Мале</p>
+                </div>
+            </a>
+        </div>
+    </section><br><hr>
+
+    <!-- Destination -->
+    <section><br>
+        <div class="destination-title">
+            <h2>Лучшие дистанции и путеводитель</h2>
+        </div>
+        <div class="container1">
+            <style>
+                .destination-title {
+                    text-align: center;
+                }
+
+                .container1 {
+                    display: grid;
+                    position: relative;
+                    grid-template-columns: auto auto auto;
+                    background: color #f6f1f1;
+                    padding: 48px;
+                    font-size: 12px;
+                    gap: 10px;
+                    margin-top: 5px;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    margin-bottom: 1px;
+
+                    .loc-detail li {
+                        font-size: 10px;
+                        color: black;
+                        margin-left: 15px;
+                        margin-bottom: 2px;
+                        list-style-type: circle;
+                    }
+
+                    .box {
+                        background: inherit;
+                        color: black;
+                        box-shadow: 5px 5px 10px #3b3737;
+                        padding: 20px;
+                        border-radius: 15px;
+                    }
+                }
+            </style>
+
+            
+            <div class="box">
+                <h1>Париж</h1>
+                <p>Париж, столица Франции, является одним из самых романтичных и культурных городов мира. Здесь сочетается
+                    величие истории с современностью, а его узкие улочки, прекрасные парки и знаменитые достопримечательности
+                    привлекают туристов со всего мира. В Париже вы сможете насладиться богатым культурным наследием,
+                    изысканной кухней и романтической атмосферой.</p>
+                <br>
+                <br><b>Лучшее время для посещения:</b> Весна и осень<br>
+
+                <br><b>Лучшие места для посещения:</b>
+                <ul class="loc-detail">
+                    <li>Эйфелева башня</li>
+                    <li>Лувр</li>
+                    <li>Нотр-Дам де Пари</li>
+                    <li>Монмартр и Базилика Сакре-Кёр</li>
+                    <li>Шанзелизе</li>
+                    <li>Парижские дворцы и сады</li>
+                </ul>
+
+                <br>Не забудьте включить в свой маршрут оффбитный район Монмартр с его уютными кафе и уличными художниками,
+                а также красивый Парижский музей Монмартра.</p>
+            </div>
+
+
+            <div class="box">
+                <h1>Стамбул</h1>
+                <p>Стамбул, олицетворение смешения культур и истории, предлагает уникальные исторические и культурные богатства,
+                    так как он принимал множество различных цивилизаций благодаря своему расположению на двух континентах. Этот
+                    уникальный город, который восхищает своей очаровательной природой и привлекательной атмосферой, также
+                    символизирует динамичную и современную городскую жизнь. Стамбул имеет многонациональную текстуру и
+                    живую атмосферу, которая сливает прошлое и будущее в единое целое, что создает ощущение универсальной
+                    истории на каждом шагу.</p>
+                <br>
+                <br><b>Лучшее время для посещения:</b> Круглый год<br>
+            
+                <br><b>Лучшие места для посещения:</b>
+                <ul class="loc-detail">
+                    <li>Гагия София</li>
+                    <li>Голубая мечеть (Султанахмет)</li>
+                    <li>Дворец Топкапы</li>
+                    <li>Гранд базар</li>
+                    <li>Босфор</li>
+                    <li>Дворец Долмабахче</li>
+                </ul>
+            
+                <br>Не пропустите посетить исторические достопримечательности и попробовать местные кулинарные изыски в
+                своем путешествии в Стамбул.</p>
+            </div>
+            
+
+            <div class="box">
+                <h1>Дубай</h1>
+                <p>
+                    Дубай - идеальное место для отдыха всей семьей, с тематическими парками, пляжами, пятничными бранчами и
+                    многим другим, чтобы удовлетворить всех. Знаменитый Бурдж Халифа, самое высокое здание в мире, заслуживает
+                    внимания. Отель Бурдж Аль-Араб, часто называемый единственным в мире отелем с 7 звездами, оставляет
+                    равнодушным. Аквапарк Аквавентюр в отеле Palms Atlantis также не должен быть пропущен. Пляж Жумейра
+                    Бич Резиденс хорошо установился как самый популярный пляжный район Дубая, а его близкое расположение к
+                    множеству ресторанов, кафе и магазинов делает его более чем достойным своего статуса.
+                    <br>
+                    <br><b>Лучшее время для посещения:</b> Октябрь - апрель <br>
+            
+                    <br> Лучшие места для посещения: <br>
+                <ul class="loc-detail">
+                    <li>Пляж Джумейра</li>
+                    <li>Дубай Молл</li>
+                    <li>Парк аттракционов IMG Worlds of Adventure</li>
+                    <li>Бурдж Халифа</li>
+                    <li>Дубай Фонтан</li>
+                </ul>
+                <br>
+                Не забудьте включить в свои туристические пакеты поездки в Дубай эти удивительные места. Найдите туры по
+                всем потребностям, включая отличные медовые месяцы, так как Дубай - это прекрасное место для
+                незабываемого отпуска.
+                </p>
+            </div>
+            
+            <div class="box">
+                <h1>Рим</h1>
+                <p>
+                    Если вы ищете исторический и культурный пункт назначения, который подходит для мирового турпакета, 
+                    то не ищите дальше, чем Рим. Этот вечный город, столица одной из самых могущественных древних империй 
+                    в мире, является непревзойденным местом для изучения архитектуры, искусства и истории. Путешествие в Рим
+                    позволяет вам погрузиться в богатую культурную традицию и наследие, оставленное веками.
+                </p>
+                <p>
+                    <b>Лучшее время для посещения:</b> апрель - июнь, сентябрь - октябрь
+                </p>
+                <p>
+                    <b>Лучшие места для посещения:</b>
+                    <ul class="loc-detail">
+                        <li>Колизей</li>
+                        <li>Пантеон</li>
+                        <li>Форум Романум</li>
+                        <li>Ватиканские музеи и Сикстинская капелла</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="box">
+                <h1>Таиланд</h1>
+                <p>
+                    Таиланд - это то, из чего состоят мечтательные туры. Это замечательное направление для международных
+                    путешествий благодаря своему прекрасному ландшафту, горам, зелени и романтической атмосфере. В Таиланде
+                    вы также сможете насладиться великолепной кухней и уютными кафе.
+                </p>
+                <p>
+                    <b>Лучшее время для посещения:</b> май - июнь / декабрь - январь
+                </p>
+                <p>
+                    <b>Лучшие места для посещения:</b>
+                    <ul class="loc-detail">
+                        <li>Пхукет</li>
+                        <li>Бангкок</li>
+                        <li>Паттайя</li>
+                        <li>Чиангмай</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="box">
+                <h1>Япония</h1>
+                <p>
+                    Япония - это удивительное место, которое стоит посетить в рамках международного тура. Своим
+                    прекрасным ландшафтом, великолепной культурой и уникальным образом жизни она привлекает туристов со
+                    всего мира. В Японии вы сможете попробовать восхитительную японскую кухню и посетить множество
+                    достопримечательностей.
+                </p>
+                <p>
+                    <b>Лучшее время для посещения:</b> апрель - май / сентябрь - ноябрь
+                </p>
+                <p>
+                    <b>Лучшие места для посещения:</b>
+                    <ul class="loc-detail">
+                        <li>Токио</li>
+                        <li>Киото</li>
+                        <li>Осака</li>
+                        <li>Хоккайдо</li>
+                    </ul>
+                </p>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+
+        <div class="container2">
+            <style>
+                .container2 {
+                    position: relative;
+                    grid-template-columns: auto auto auto;
+                    gap: 5%;
+                    padding: 35px;
+                    margin-top: 50px;
+                    margin-left: 35px;
+                    margin-right: 34px;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    color: black;
+                    background-color: white;
+                    box-shadow: 5px 5px 10px #3b3737;
+                }
+            </style>
+
+            <div> <br>
+                <h1 class="faqh1">Часто задаваемые вопросы</h1>
+            </div>
+
+            <p><br>
+            <h3> Какие места я могу выбрать для путешествия?</h3> <br>
+            <p> Вы можете выбрать любое направление для путешествия в соответствии со своим настроением! 
+                Для активного отдыха вы можете выбрать дикие природные уголки, пешие походы и другие приключенческие
+                направления. Для романтического отдыха с вашим особым человеком вы можете выбрать из разнообразия 
+                направлений, подходящих для пар. Вы также можете выбрать тип отдыха в зависимости от того, 
+                какое направление вам больше нравится — будь то горы, пляжи, исторические места или паломнические места.</p><br>
+            <hr>
+
+            <br>
+            <h3> Могу ли я выбрать бюджетный отпуск?</h3>
+            <br>
+            
+            <p>
+                Да, вы можете. Все, что вам нужно сделать, это установить примерную сумму расходов в своем уме перед 
+                началом изучения идей здесь. Вы можете искать подходящее направление для вашего путешествия в любом 
+                диапазоне от 1000 до 25000. Рекомендуется сделать все бронирования заранее, чтобы избежать
+                изменения цен...</p><br>
+            <hr>
+
+            <br>
+            <h3> Какое время года лучше всего подходит для бронирования отпуска?</h3>
+            <br>
+            <p>Отпуска можно бронировать в течение всего года. Вам просто нужно выбрать месяц, в котором вы планируете 
+                путешествовать. Наш отобранный список идей разработан таким образом, чтобы вы видели только те направления,
+                которые наиболее подходят для этого конкретного месяца года. Если вы выберете комбинацию фильтров, 
+                определяющих ваш месяц, бюджет и цель путешествия, вы получите подходящее название направления и другие детали.</p>
+            <br>
+            <hr>
+
+            <br>
+            <h3>Что включено в идею отпуска?</h3>
+            <p>После выбора направления вы получите полную информацию обо всех уникальных особенностях этого места, которые нельзя 
+                пропустить, включая самые посещаемые местные достопримечательности, лучшие места для проживания и все незабываемые 
+                впечатления, в которых вы можете погрузиться. Вам будут предложены несколько вариантов отелей, курортов и гостевых 
+                домов на выбор в зависимости от вашего бюджета.</p> <br>
+            <hr>
+            </p>
+        </div>
+    </section>
+
+    <!-- Рассылка -->
+
+    <section class="newsletter">
+        <div class="newstext">
+            <h2>Рассылка</h2>
+            <p>Подпишитесь чтоб получить самые последние<br>обновления каждую неделю!</p>
+        </div>
+
+        <div class="send">
+            <form action="">
+                <input type="email" name="emailid" placeholder="E-mail" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./booking.html">Register</a></li>
+                        <li><a href="./info.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlinks">
+                    <h4>Присоединитесь</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/byhlva/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Все права принадлежат Гашимовой Лале!</p>
+        </div>
+    </section>
+
+    </body>
+
+</html>

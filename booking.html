@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Here</title>
+    <link rel="icon" href="./assets/files/logo.png" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/booking.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Навигационное меню -->
+    <nav>
+        <img src="./assets/files/logo.png" class="logo" alt="Лого" title="FirstFlight Travels">
+        <ul class="navbar">
+            <li>
+                <a href="index.html">Главная</a>
+                <a href="./index.html#package">Пакеты</a>
+                <a href="./index.html#locations">Локации</a>
+                <a href="./info.html">О нас</a>
+                <a href="./contact.html">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Форма бронирования -->
+    <div id="Забронировать" style="margin-top: 7rem;">
+        
+        <form action="">
+            <h1>Забронируйте сейчас</h1>
+            <p>Пожалуйста заполните страницу</p>
+            <fieldset>
+                <label>Имя: *
+                    <input type="text" class="data" name="firstname" placeholder="Введите Имя" required />
+                </label><br>
+                <label>Введите Фамилию: *
+                    <input type="text" name="lastname" placeholder="Введите Фамилию" required />
+                </label><br>
+                <label>Почта: *
+                    <input type="email" name="email" placeholder="Введите Почту" required />
+                </label><br>
+                <label>Номер Телефона: *
+                    <input type="text" name="phone" placeholder="Введите Номер Телефона" required />
+                </label><br>
+                <label>С какой Даты: *
+                    <input type="date" name="С какой Даты" required />
+                </label><br>
+                <label>По какую Дату: *
+                    <input type="date" name="По какую Дату" required />
+                </label><br>
+            </fieldset>
+             <!-- Второй блок полей -->
+            <fieldset>
+                <label>Тип размещения: *
+                    <select name="accomodation" id="accomodation">
+                        <option value="">Выберите один вариант</option>
+                        <option value="1">Отель</option>
+                        <option value="2">Апартаменты с самостоятельным обслуживанием</option>
+                        <option value="3">Хостел</option>
+                        <option value="4">Гостевой дом</option>
+                    </select>
+                </label><br>
+                <label>Количество номеров: *
+                    <input type="number" name="age" min="1" max="120" class="room" /><br>
+                </label><br>
+                <label>Тип номера: * <br>
+                    <!-- Переключатели для выбора типа номера -->
+                    <label>
+                        <input type="radio" name="room-type" class="inline" /> Одноместный номер
+                    </label><br>
+                    <label>
+                        <input type="radio" name="room-type" class="inline" /> Двухместный номер
+                    </label><br>
+                    <label>
+                        <input type="radio" name="room-type" class="inline" /> Трехместный номер
+                    </label><br>
+                    <label>
+                        <input type="radio" name="room-type" class="inline" /> Четырехместный номер
+                    </label>
+                </label><br>
+                <label>Дополнительные услуги: <br>
+                    <!-- Поле для ввода дополнительной информации -->
+                    <textarea name="additional" rows="5" cols="30" placeholder="Ваше сообщение ..."></textarea>
+                </label><br>
+            </fieldset>
+            <!-- Кнопка подтверждения бронирования -->
+            <input type="submit" value="Подтвердить" onclick="alert('Успешно Забронировано! \nНаслаждайтесь отдыхом!')" class="submit-btn" />
+        </form>
+    </div>
+
+    <!-- Футер -->
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+                 <!-- Быстрые ссылки -->
+                <div class="footlinks">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="./booking.html">Регистрация</a></li>
+                        <li><a href="./info.html">О нас</a></li>
+                        <li><a href="./contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <!-- Социальные сети -->
+                <div class="footlinks">
+                    <h4>Присоединитесь</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/byhlva/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Все права принадлежат Гашимовой Лале!</p>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Получаем элемент календаря
+        let calendar = document.querySelector('.calendar')
+
+        // Месяцы для календаря
+        const month_names = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+
+        // Проверка на високосный год
+        isLeapYear = (year) => {
+            return (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 === 0)
+        }
+
+        // Получаем количество дней в феврале
+        getFebDays = (year) => {
+            return isLeapYear(year) ? 29 : 28
+        }
+
+        // Генерируем календарь
+        generateCalendar = (month, year) => {
+
+            let calendar_days = calendar.querySelector('.calendar-days')
+            let calendar_header_year = calendar.querySelector('#year')
+
+            let days_of_month = [31, getFebDays(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+            calendar_days.innerHTML = ''
+
+            let currDate = new Date()
+            if (month > 11 || month < 0) month = currDate.getMonth()
+            if (!year) year = currDate.getFullYear()
+
+            let curr_month = `${month_names[month]}`
+            month_picker.innerHTML = curr_month
+            calendar_header_year.innerHTML = year
+
+            // Получаем первый день месяца
+            let first_day = new Date(year, month, 1)
+
+            for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
+                let day = document.createElement('div')
+                if (i >= first_day.getDay()) {
+                    day.classList.add('calendar-day-hover')
+                    day.innerHTML = i - first_day.getDay() + 1
+                    day.innerHTML += `<span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>`
+                    if (i - first_day.getDay() + 1 === currDate.getDate() && year === currDate.getFullYear() && month === currDate.getMonth()) {
+                        day.classList.add('curr-date')
+                    }
+                }
+                calendar_days.appendChild(day)
+            }
+        }
+        //
+        let month_list = calendar.querySelector('.month-list')
+
+        // Создаем список месяцев для выбора
+        month_names.forEach((e, index) => {
+            let month = document.createElement('div')
+            month.innerHTML = `<div data-month="${index}">${e}</div>`
+            month.querySelector('div').onclick = () => {
+                month_list.classList.remove('show')
+                curr_month.value = index
+                generateCalendar(index, curr_year.value)
+            }
+            month_list.appendChild(month)
+        })
+
+        let month_picker = calendar.querySelector('#month-picker')
+
+        // Показываем список месяцев при клике на месяц
+        month_picker.onclick = () => {
+            month_list.classList.add('show')
+        }
+
+        let currDate = new Date()
+
+        let curr_month = {
+            value: currDate.getMonth()
+        }
+        let curr_year = {
+            value: currDate.getFullYear()
+        }
+
+        generateCalendar(curr_month.value, curr_year.value)
+
+        // Переключение на предыдущий год
+        document.querySelector('#prev-year').onclick = () => {
+            --curr_year.value
+            generateCalendar(curr_month.value, curr_year.value)
+        }
+
+        // Переключение на следующий год
+        document.querySelector('#next-year').onclick = () => {
+            ++curr_year.value
+            generateCalendar(curr_month.value, curr_year.value)
+        }
+    </script>
+</body>
+
+</html>
